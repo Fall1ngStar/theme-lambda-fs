@@ -13,7 +13,7 @@
 ## Install
 
 ```fish
-$ omf install github.com/Fall1ngstar/theme-lambda-fs
+$ omf install https://github.com/Fall1ngstar/theme-lambda-fs
 ```
 
 
