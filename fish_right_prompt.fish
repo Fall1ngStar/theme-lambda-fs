@@ -31,7 +31,7 @@ function format_time
   end
 
   if test $milliseconds -gt 0
-    set time $time (printf "%sms" $milliseconds)
+    set time $time (printf "%sms" (math -s0 "$milliseconds % 1000"))
   end
   echo -e (string join ' ' $time)
 end
