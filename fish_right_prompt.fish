@@ -30,11 +30,10 @@ function format_time
     set time $time (printf "%ss" $seconds)
   end
 
-  if test $milliseconds -gt 300
-    echo -e (string join ' ' $time)
-  else
-    echo -e (printf "%sms" $milliseconds)
+  if test $milliseconds -gt 0
+    set time $time (printf "%sms" $milliseconds)
   end
+  echo -e (string join ' ' $time)
 end
 
 function display_last_exec_time
